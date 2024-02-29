@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    width: 100vw;
+}
+
+.father-div {
+    box-sizing: border-box;
+    /* width: 100vw; */
+    background-color: aliceblue;
+    display: flex;
+}
+
+.div-1 {
+    width: calc(50vw - 25px);
+    height: 100px;
+    background-color: red;
+}
+
+.div-2 {
+    width: 50px;
+    position: relative;
+}
+.div-2 span{
+    transform: rotate(90deg);
+    position: absolute;
+    top:-0%;
+    left:100%;
+    padding-top:10%;
+    padding-left:90%;
+    white-space: no-wrap;
+}
+
+.div-3{
+    width: calc(50vw - 25px);
+    height: 100px;
+    background-color: green;
+}

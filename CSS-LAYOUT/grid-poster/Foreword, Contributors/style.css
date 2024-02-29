@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+
+    margin-bottom: 30px;
+}
+
+.contributors {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: 350px;
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.color__header {
+    font-size: 20px;
+    font-weight: 500;  
+}
+
+.color__footer {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.contributors .color:first-child{
+    background-color:rgb(191,190,166)
+}
+
+.contributors .color:nth-child(3){
+    background-color: rgb(254,72,21);
+}
+
+.contributors .color:nth-child(5){
+    background-color: rgb(133,126,150);
+}
+
+.contributors .color:nth-child(6){
+    background-color: rgb(209,255,113);
+}
+
+.contributors .color:nth-child(7){
+    background-color: rgb(152,51,51);
+}
+
+.contributors .color:nth-child(8){
+    background-color: rgb(59,169,250);
+} 
+
+.contributors .color:nth-child(10){
+    background-color: rgb(65,144,122);
+}
+
+.contributors .color:last-child{
+    background-color: rgb(227,196,229);
+}

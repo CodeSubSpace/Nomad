@@ -1,0 +1,64 @@
+.grid {
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid__small {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.box--big:first-child {
+    color: rgb(243,69,8);
+    background-color: rgb(217,231,222);
+}
+
+.box--big:nth-child(2) {
+    color: white;
+    background-color: rgb(0,138,105);
+}
+
+.box--big:nth-child(3) {
+    color: white;
+    background-color: rgb(243,69,8);
+}
+
+.box--small:first-child {
+    color: rgb(243,69,8);
+    background-color: rgb(247,172,196);
+}
+
+.box--small:nth-child(2) {
+    color: white;
+    background-color: rgb(95,95,169);
+}
+
+.box--small:nth-child(3) {
+    color: rgb(243,69,8);
+    background-color: rgb(254,192,39);
+}
+
+.box--small:nth-child(4) {
+    color: white;
+    background-color:rgb(248,115,116);
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        font-size: 30px;
+    }
+}
